@@ -51,7 +51,7 @@ function classifyPose() {
 
 function gotResult(error, results) {
   
-  if (results[0].confidence > 0.90) {
+  if (results[0].confidence > 0.70) {
     poseLabel = results[0].label.toUpperCase();
   }
   else {
